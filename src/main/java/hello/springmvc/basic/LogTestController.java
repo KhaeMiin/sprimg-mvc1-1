@@ -32,6 +32,7 @@ public class LogTestController {
         log.warn("warn log={}", name);//경고(위험)
         log.error("error log-{}", name);//에러로고
 
+
         return "OK";//RestController: Http 메시지 바디에 바로 들어감. 따라서 실행 결과로 ok 메시지를 받을 수 있다.
     }
 
