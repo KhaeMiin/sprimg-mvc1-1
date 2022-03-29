@@ -71,7 +71,7 @@ public class RequestBodyJsonController {
 
     @ResponseBody
     @PostMapping("/request-body-json-v5")
-    public HelloData requestBodyJsonV5(@RequestBody HelloData helloData) {//@RequestBody생략불가(생략하면 @ModelAttribute가 됨)
+    public HelloData requestBodyJsonV5(@RequestBody HelloData helloData) {//@RequestBody 생략불가(생략하면 @ModelAttribute 가 됨)
 
         log.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
         return helloData;
